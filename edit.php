@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>My first PHP website</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
 	</head>
 	<?php
 		session_start(); //starts the session
@@ -20,11 +21,11 @@
 		<h2 align="center">Currently Selected</h2>
 		<table border="1px" width="100%">
 			<tr>
-				<th>Id</th>
-				<th>Details</th>
-				<th>Post Time</th>
-				<th>Edit Time</th>
-				<th>Public Post</th>
+				<td align="center"><strong>Id</strong></td>
+				<td align="center"><strong>Details</strong></td>
+				<td align="center"><strong>Post Time</strong></td>
+				<td align="center"><strong>Edit Time</strong></td>
+				<td align="center"><strong>Public Post</strong></td>
 			</tr>
 			<?php
 				if(!empty($_GET['id'])){

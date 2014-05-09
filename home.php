@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>My first PHP website</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
   </head>
   <?php
     session_start(); //starts the session
@@ -21,15 +22,15 @@
       <input type="submit" value="Add to list"/>
     </form>
     <h2 align="center">My list</h2>
-    <table border="1px" width="100%">
+    <table border="1px" width="100%" class = "table table-hover">
       <tr>
-        <th>Id</th>
-        <th>Details</th>
-        <th>Post Time</th>
-        <th>Edit Time</th>
-        <th>Edit</th>
-        <th>Delete</th>
-        <th>Public Post</th>
+        <td align="center"><strong>Id</strong></td>
+        <td align="center"><strong>Details</strong></td>
+        <td align="center"><strong>Post Time</strong></td>
+        <td align="center"><strong>Edit Time</strong></td>
+        <td align="center"><strong>Edit</strong></td>
+        <td align="center"><strong>Delete</strong></td>
+        <td align="center"><strong>Public Post</strong></td>
       </tr>
       <?php
         $mysqli = new mysqli("localhost","root","","first_db") or die("Error " . mysqli_error($mysqli));
